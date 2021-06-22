@@ -1,6 +1,6 @@
 class NoticiaDestaque extends Noticia {
-  constructor(imagem, titulo, dataDePublicacao, autorDaNoticia, resumo, textoDaNoticia) {
-    super(titulo, dataDePublicacao, resumo, textoDaNoticia, autorDaNoticia);
+  constructor(imagem, title, publishedAt, description, author) {
+    super(title, publishedAt, description, author);
     this._imagemDestaque = imagem;
 
   }
