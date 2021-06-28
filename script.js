@@ -8,13 +8,11 @@ request.onload = function () {
   var response = request.response;
   
   response.forEach(response => {
-    let titulo = response.title;
-    let dataDePublicacao = response.publishedAt;
-    let resumo = response.description;
-    let autorDaNoticia = response.author;
+    let titulo = response.articles.title;
+    let dataDePublicacao = response.articles.publishedAt;
+    let resumo = response.articles.description;
+    let autorDaNoticia = response.articles.author;
     let imagem = response.imagem;
-
-    console.log(response.title);
     
     let objeto = new NoticiaDestaque(imagem, title, publishedAt, description, author);
 
