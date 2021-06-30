@@ -2,6 +2,7 @@ class NoticiaDestaque extends Noticia {
   constructor(imagem, title, publishedAt, description, author) {
     super(title, publishedAt, description, author);
     this._imagemDestaque = imagem;
+    
 
   }
   get mostrarDestaque() {
@@ -23,5 +24,3 @@ class NoticiaDestaque extends Noticia {
   }
 
 }
-
-

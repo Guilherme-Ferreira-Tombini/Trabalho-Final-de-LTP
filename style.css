@@ -8,3 +8,14 @@ header h1{
 main{
   background-color: white;
 }
+a:link, a:visited {
+	text-decoration: none;
+  color: black;
+}
+p{
+  text-align: justify;
+}
+h2{
+  text-align: justify;
+}
+	
