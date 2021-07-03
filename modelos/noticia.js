@@ -20,7 +20,7 @@ class Noticia {
 
   tela() {
     if (this._titulo) {
-      return "<div class='col-12 p-3'>" +"<div class='card'>"+ "<div class='card-body'>"+ "<h2 class='card-title'>"+"<a href='"+this._linkDaNoticia+"'>"+this._titulo+"</a>"+"</h2>"+ "<h6 class='card-subtitle mb-2 text-muted'>"+this._dataDePublicacao+"</h4>"+ "<h6 class='card-subtitle mb-2 text-muted'>"+this._autorDaNoticia+"</h4>"+"<p class='card-text'>"+this._resumo+"</p>"+"</div> </div> </div>"
+      return "<div class='col-12 p-3'>" + "<div class='card' id='cards'>" + "<div class='card-body'>" + "<h2 class='card-title'>" + "<a href='" + this._linkDaNoticia + "'>" + this._titulo + "</a>" + "</h2>" + "<h6 class='card-subtitle mb-2 text-muted'>" + this._dataDePublicacao + "</h6>" + "<h6 class='card-subtitle mb-2 text-muted'>" + this._autorDaNoticia + "</h6>" + "<p class='card-text'>" + this._resumo + "</p>" + "</div> </div> </div>"
 
     } else {
       throw new Costumizar("A noticia deve ter um titulo");
