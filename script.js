@@ -20,6 +20,8 @@ request.onload = function () {
   let noticia1 = document.getElementById("Imagem");
   noticia1.insertAdjacentHTML('afterbegin', '<div>' + objeto_destaque.mostrarDestaque + '</div>');
 
+  response.articles.shift();
+
   response.articles.forEach(response => {
     let titulo = response.title;
     let dataDePublicacao = response.publishedAt;
@@ -32,6 +34,13 @@ request.onload = function () {
 
     let noticias = document.getElementById("noticias");
     noticias.insertAdjacentHTML('afterbegin', '<div id="test">' + objeto.mostrarNoticia + '<div>');
-
   })
+
+  let ultimas_noticias = response.articles;
+  let ultimo = ultimas_noticias.shift();
+  let penultimo = ultimas_noticias.shift();
+ 
+  let lista = document.getElementById("lista");
+  lista.insertAdjacentHTML('afterbegin', '<li>' + ultimo.title + ";" + '</li>' + '<li>' + penultimo.title +';'+ '</li>');
+
 }

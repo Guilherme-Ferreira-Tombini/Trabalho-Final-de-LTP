@@ -33,4 +33,10 @@ img{
 }
 #cards{
   background-color: #ffbf00;
+  margin-bottom: 13px;
+}
+aside{
+    background-color: rgb(79, 79, 163);
+    color: white;
+    height: 100%;
 }
