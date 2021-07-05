@@ -41,6 +41,6 @@ request.onload = function () {
   let penultimo = ultimas_noticias.shift();
  
   let lista = document.getElementById("lista");
-  lista.insertAdjacentHTML('afterbegin', '<li>' + ultimo.title + ";" + '</li>' + '<li>' + penultimo.title +';'+ '</li>');
+  lista.insertAdjacentHTML('afterbegin', '<li>' + penultimo.title + ";" + '</li>' + '<li>' + ultimo.title +';'+ '</li>');
 
 }
