@@ -33,7 +33,7 @@ request.onload = function () {
     let objeto = new Noticia(titulo, dataDePublicacao, resumo, autorDaNoticia, link);
 
     let noticias = document.getElementById("noticias");
-    noticias.insertAdjacentHTML('afterbegin', '<div id="test">' + objeto.mostrarNoticia + '<div>');
+    noticias.insertAdjacentHTML('afterbegin', '<div id="test">' + objeto.mostrarNoticia + '</div>');
   })
 
   let ultimas_noticias = response.articles;
